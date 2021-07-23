@@ -54,8 +54,8 @@ if __name__ == '__main__':
     # Initialize a ros node
     rospy.init_node('movebase_client_py')
     while True:
-      result = movebase_client(0.0, 0.0, 0.0)
+      result = movebase_client(6.35, 23.6, 179.0)
       rospy.sleep(5)
 
-      result = movebase_client(0.0, 0.0, 180.0)
+      result = movebase_client(6.49, 12.7, 179.0)
       rospy.sleep(5)
